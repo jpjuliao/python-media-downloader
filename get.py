@@ -20,7 +20,7 @@ end = sys.argv[3]
 def complete_function(stream, file_path):
     print('Download complete:', file_path)
 
-    video = VideoFileClip(file_path).subclip(0,30)
+    video = VideoFileClip(file_path).subclip(start,end)
     video.write_videofile("edited.mp4",fps=25)
 
 yt = YouTube(
