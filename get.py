@@ -11,9 +11,6 @@ print('Loading...')
 # video = VideoFileClip(file_path).subclip(0,30)
 # video.write_videofile("edited.mp4",fps=25)
 
-pprint(globals())
-sys.exit()
-
 url = sys.argv[1]
 start = sys.argv[2]
 end = sys.argv[3]
